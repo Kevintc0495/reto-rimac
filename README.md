@@ -1,50 +1,48 @@
-# React + TypeScript + Vite
+# Proyecto de Cotizaciones de Seguros
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este proyecto consiste en una aplicación que permite realizar cotizaciones de seguros, desarrollada con **React** y otras bibliotecas para ofrecer una experiencia de usuario fluida y eficiente. A continuación, detallamos las herramientas y dependencias utilizadas, y los pasos necesarios para configurar el proyecto.
 
-Currently, two official plugins are available:
+## Tecnologías Utilizadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Frontend
+- **React**: Elegido por su rendimiento y flexibilidad para construir interfaces de usuario interactivas.
+- **React Router DOM**: Utilizado para gestionar la navegación entre diferentes vistas de la aplicación de manera eficiente.
+- **Axios**: Para manejar las solicitudes HTTP y facilitar la comunicación con las API externas.
+- **JS-Cookie**: Implementado para manejar las cookies de manera sencilla en el navegador, permitiendo almacenar tokens de autenticación.
 
-## Expanding the ESLint configuration
+### Desarrollo y Herramientas
+- **Vite**: Elegido por su rápida velocidad de desarrollo y soporte nativo para TypeScript.
+- **TypeScript**: Aporta seguridad en el desarrollo, mejorando la experiencia al detectar errores en tiempo de compilación.
+- **ESLint**: Ayuda a mantener un código limpio y consistente, facilitando la identificación de errores comunes.
+- **Prettier**: Formateador de código para asegurar la consistencia en el estilo del código entre los miembros del equipo.
+- **Husky**: Utilizado para gestionar pre-commits, asegurando que el código esté formateado y siga las reglas de linting antes de hacer un commit.
+- **Sass**: Utilizado para la gestión avanzada de estilos en la aplicación.
+- **Commitlint y Lint-staged**: Ayudan a mantener un historial de commits limpio y estructurado siguiendo convenciones estándar.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Estructura del Proyecto
 
-- Configure the top-level `parserOptions` property like this:
+El proyecto está organizado en componentes, vistas y rutas. Los formularios para cotizar seguros están construidos en React, con manejo de estado local para la captura de datos. La autenticación se maneja con cookies para sesiones seguras.
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## Instalación y Configuración
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+1. **Clonar el repositorio**:
+   ```bash
+   git clone https://github.com/Kevintc0495/reto-rimac.git
+   cd reto
+   ```
+2. **Levantar el proyecto en modo desarrollo:**:
+   ```bash
+   npm run dev
+   ```
+3. **Compilar el proyecto para producción:**:
+   ```bash
+   npm run build
+   ```
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+## Consideraciones Importantes
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+- **Requisitos**: Asegúrate de tener Node `>=18.0.0` instalado en tu máquina.
+- **Husky**: Antes de hacer cualquier commit, Husky ejecutará `lint-staged` para formatear el código y verificar que todo esté correcto.
+- **Commitlint**: Se ha configurado para que todos los mensajes de commit sigan una convención estándar.
+- **TypeScript**: Si se encuentra algún problema de tipado, asegúrate de revisar los archivos `.ts` y `.tsx`.
+- **Azure Deployment**: Se ha añadido un archivo `web.config` para facilitar el despliegue en Azure. Este archivo configura el servidor de manera óptima para ejecutar la aplicación en dicho entorno.
