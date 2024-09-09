@@ -1,0 +1,23 @@
+.p-login {
+  width: 100%;
+  max-width: 500px;
+  margin-inline: auto;
+}
+
+@media screen and (min-width: 1200px) {
+  .p-login {
+    display: flex;
+    justify-content: space-between;
+    max-width: none;
+
+    &__wrapper_form {
+      flex: 1;
+    }
+
+    &__form {
+      max-width: 288px;
+      margin-inline: auto;
+      margin-top: 48px;
+    }
+  }
+}

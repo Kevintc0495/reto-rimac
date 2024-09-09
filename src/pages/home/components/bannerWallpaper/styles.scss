@@ -1,0 +1,16 @@
+.c_banner_wallpaper {
+  position: absolute;
+  width: 112px;
+  top: 0;
+  right: 0;
+
+  img {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .c_banner_wallpaper {
+    position: static;
+  }
+}

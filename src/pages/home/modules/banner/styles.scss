@@ -1,0 +1,36 @@
+.m_banner {
+  position: relative;
+  padding: 40px 0 56px 33px;
+  background-color: #F7F8FC;
+  flex: 1;
+
+  &__banner_message {
+    width: 205px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .m_banner {
+    display: flex;
+    height: calc(100vh - 56px);
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    background-image: url('../../../../assets/img/banner.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 536px;
+
+
+    &__banner_message {
+      order: 2;
+      width: 288px;
+      margin-top: 24px;
+    }
+
+    &__banner_wallpaper {
+      margin-top: 32px;
+      width: 320px;
+    }
+  }
+}

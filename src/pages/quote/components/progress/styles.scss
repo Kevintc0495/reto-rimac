@@ -1,0 +1,34 @@
+.c_progress {
+  display: flex;
+  align-items: center;
+  padding: 12px 32px;
+  border-top: 1px solid #F0F2FA;
+  border-bottom: 1px solid #F0F2FA;
+  column-gap: 16px;
+
+  &__wrapper_text {
+    display: flex;
+    column-gap: 12px;
+    align-items: center;
+
+    span {
+      font-family: Lato;
+      font-size: 10px;
+      font-weight: 700;
+      line-height: 16px;
+      letter-spacing: 0.800000011920929px;
+      text-align: left;
+      color: #676F8F;
+    }
+  }
+
+  &__bar_progress {
+    flex: 1;
+  }
+  
+  &__btn_back {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

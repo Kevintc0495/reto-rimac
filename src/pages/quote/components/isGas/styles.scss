@@ -1,0 +1,36 @@
+.c_is-gas {
+  &__subtitle {
+    display: inline-block;
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.20000000298023224px;
+    text-align: center;
+    color: #494F66;
+  }
+  
+  &__wrapper_radio {
+    display: flex;
+    align-items: center;
+    column-gap: 32px;
+    margin-top: 16px;
+  }
+
+  &__radio {
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+
+    span {
+      display: inline-block;
+      font-family: Lato;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      letter-spacing: 0.20000000298023224px;
+      text-align: left;
+      color: #494F66;
+    }
+  }
+}
