@@ -1,0 +1,38 @@
+.c-button {
+  border: 0;
+  padding: 20px;
+  cursor: pointer;
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.800000011920929px;
+  text-align: center;
+  border-radius: 8px;
+  color: #223162;
+  
+  &--primary {
+    background-color: #EF3340;
+    color: #FFFFFF;
+  }
+
+  &--secondary {
+    padding: 0;
+    width: 24px;
+    height: 24px;
+    border: 1px solid #F0F2FA;
+    border-radius: 50%;
+    background-color: transparent;
+  }
+
+  &--tertiary {
+    font-size: 10px;
+    color: #6F7DFF;
+    background-color: transparent;
+    padding: 0;
+  }
+
+  &--fullwidth {
+    width: 100%;
+  }
+}

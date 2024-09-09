@@ -1,0 +1,26 @@
+.c_select {
+  position: relative;
+  padding: 16px;
+  height: 56px;
+  border: 1px solid #C5CBE0;
+  border-radius: 4px;
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  appearance: none;
+  background-color: white;
+  background-image: url('data:image/svg+xml,<svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M13.2943 6.23418C13.6148 6.56556 13.6148 7.097 13.2943 7.42837L9.09867 11.766C8.76988 12.1059 8.23001 12.1059 7.90122 11.766L3.70562 7.42837C3.38509 7.097 3.38509 6.56556 3.70562 6.23418C4.03441 5.89427 4.57428 5.89427 4.90307 6.23418L8.49995 9.9528L12.0968 6.23418C12.4256 5.89427 12.9655 5.89427 13.2943 6.23418Z" fill="%23EF3340"/></svg>');
+  background-repeat: no-repeat;
+  background-position: right 16px center;
+  background-size: 12px;
+
+  &--fullwidth {
+    width: 100%;
+  }
+
+  &:focus {
+    outline: 2px solid #005fcc;
+  }
+}

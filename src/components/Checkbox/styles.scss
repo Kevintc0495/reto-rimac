@@ -1,0 +1,30 @@
+.c_checkbox {
+  appearance: none;
+  border: 1px solid #d2d2d2;
+  border-radius: 4px;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  min-width: 20px;
+  max-width: 20px;
+  min-height: 20px;
+  max-height: 20px;
+
+  &:hover {
+    border-color: #43B748;
+  }
+
+  &:checked {
+    background-color: #43B748;
+    background-image: url('data:image/svg+xml,<svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.42216 6.5952L9.05839 0.979829C9.16843 0.869787 9.2913 0.816898 9.42698 0.821161C9.56266 0.825439 9.68818 0.885273 9.80356 1.00066C9.91895 1.11604 9.97664 1.24023 9.97664 1.37324C9.97664 1.50624 9.91895 1.63044 9.80356 1.74583L3.90773 7.64164C3.77098 7.77839 3.61259 7.84677 3.43258 7.84677C3.25257 7.84677 3.09418 7.77839 2.95743 7.64164L0.582433 5.26666C0.472392 5.15662 0.414697 5.03376 0.40935 4.89808C0.404017 4.7624 0.459038 4.63687 0.574413 4.5215C0.689802 4.40611 0.813996 4.34841 0.946996 4.34841C1.08001 4.34841 1.2042 4.40611 1.31958 4.5215L3.42216 6.5952Z" fill="white"/></svg>');
+    border: 0;
+  }
+
+  &:checked:hover {
+    border: 1px solid #43B748;
+  }
+
+  &:focus-visible {
+    outline: 2px solid #43B748;
+  }
+}

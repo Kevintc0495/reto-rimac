@@ -1,0 +1,53 @@
+.c_radio {
+
+  appearance: none;
+  margin: 0;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #C5CBE0;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+
+  &:hover {
+    border-color: #43B748;
+  }
+  
+  &:active {
+    border-color: #43B748;
+  }
+  
+  &:focus-visible {
+    outline: none;
+  }
+  
+  &:checked:focus-visible {
+    border-color: #43B748;
+  }
+  
+  &:checked:focus-visible::before {
+    background-color: #43B748;
+  }
+  
+  &:checked::before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    background-color: transparent;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-52%, -52%);
+    background-color: #43B748;
+  }
+
+  &:checked {
+    border-color: #43B748;
+  }
+  
+  &:checked:active::before {
+    background-color: #43B748;
+  }
+}
